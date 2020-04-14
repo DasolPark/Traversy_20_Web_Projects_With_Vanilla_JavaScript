@@ -10,8 +10,8 @@ populateUI();
 
 // Save selected movie index and price
 function setMovieData(movieIndex, moviePrice) {
-  localStorage.setItem('selectedMovieIndex', movieIndex);
-  localStorage.setItem('selectedMoviePrice', moviePrice);
+  localStorage.setItem(`selectedMovieIndex${movieSelect.selectedIndex}`, movieIndex);
+  localStorage.setItem(`selectedMoviePrice${movieSelect.selectedIndex}`, moviePrice);
 }
 
 // Update total and count
@@ -20,7 +20,7 @@ function updateSelectedCount() {
 
   const seatsIndex = [...selectedSeats].map((seat) => [...seats].indexOf(seat));
 
-  localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
+  localStorage.setItem(`selectedSeats${movieSelect.selectedIndex}`, JSON.stringify(seatsIndex));
 
   const selectedSeatsCount = selectedSeats.length;
 
@@ -30,17 +30,21 @@ function updateSelectedCount() {
 
 // Get data from localstorage and populate UI
 function populateUI() {
-  const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
+  const selectedSeats = JSON.parse(localStorage.getItem(`selectedSeats${movieSelect.selectedIndex}`));
 
   if (selectedSeats !== null && selectedSeats.length > 0) {
     seats.forEach((seat, index) => {
       if (selectedSeats.indexOf(index) > -1) {
         seat.classList.add('selected');
+      } else {
+        seat.classList.remove('selected');
       }
     });
+  } else {
+    seats.forEach(seat => seat.classList.remove('selected'));
   }
 
-  const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
+  const selectedMovieIndex = localStorage.getItem(`selectedMovieIndex${movieSelect.selectedIndex}`);
 
   if (selectedMovieIndex !== null) {
     movieSelect.selectedIndex = selectedMovieIndex;
@@ -50,7 +54,9 @@ function populateUI() {
 // Movie select event
 movieSelect.addEventListener('change', (e) => {
   ticketPrice = +e.target.value;
+
   setMovieData(e.target.selectedIndex, e.target.value);
+  populateUI();
   updateSelectedCount();
 });
 
