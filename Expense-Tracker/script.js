@@ -90,6 +90,7 @@ function updateValues() {
 // Remove transaction by ID
 function removeTransaction(id) {
   transactions = transactions.filter(transaction => transaction.id !== id);
+  // filter는 자체값을 변경하지 않고, 값을 return할 뿐이다.
 
   updateLocalStorage();
 
