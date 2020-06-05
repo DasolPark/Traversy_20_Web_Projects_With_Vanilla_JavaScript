@@ -10,8 +10,8 @@
 |  06   |    Menu Slider & Modal     |  [x]  |
 |  07   |        Hangman Game        |  [x]  |
 |  08   |       Mealfinder App       |  [x]  |
-|  09   |      Expense Tracker       |  [ ]  |
-|  10   |        Music Player        |  [ ]  |
+|  09   |      Expense Tracker       |  [x]  |
+|  10   |        Music Player        |  [x]  |
 |  11   |     Infinite Scrolling     |  [ ]  |
 |  12   |        Typing Game         |  [ ]  |
 |  13   |     Speech Text Reader     |  [ ]  |
