@@ -12,8 +12,8 @@
 |  08   |       Mealfinder App       |  [x]  |
 |  09   |      Expense Tracker       |  [x]  |
 |  10   |        Music Player        |  [x]  |
-|  11   |     Infinite Scrolling     |  [ ]  |
-|  12   |        Typing Game         |  [ ]  |
+|  11   |     Infinite Scrolling     |  [x]  |
+|  12   |        Typing Game         |  [x]  |
 |  13   |     Speech Text Reader     |  [ ]  |
 |  14   |        Memory Cards        |  [ ]  |
 |  15   |      LyricsSearch App      |  [ ]  |
