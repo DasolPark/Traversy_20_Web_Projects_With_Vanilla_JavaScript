@@ -14,7 +14,7 @@
 |  10   |        Music Player        |  [x]  |
 |  11   |     Infinite Scrolling     |  [x]  |
 |  12   |        Typing Game         |  [x]  |
-|  13   |     Speech Text Reader     |  [ ]  |
+|  13   |     Speech Text Reader     |  [x]  |
 |  14   |        Memory Cards        |  [ ]  |
 |  15   |      LyricsSearch App      |  [ ]  |
 |  16   |        Relaxer App         |  [ ]  |

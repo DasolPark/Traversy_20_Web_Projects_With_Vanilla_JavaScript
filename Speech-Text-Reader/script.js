@@ -65,6 +65,7 @@ function createBox(item) {
   const { image, text } = item;
 
   box.classList.add('box');
+
   box.innerHTML = `
     <img src="${image}" alt="${text}" />
     <p class="info">${text}</p>
@@ -74,10 +75,10 @@ function createBox(item) {
     setTextMessage(text);
     speakText();
 
-    // Add active dffect
+    // Add active effect
     box.classList.add('active');
     setTimeout(() => box.classList.remove('active'), 800);
-  })
+  });
 
   main.appendChild(box);
 }
@@ -125,9 +126,9 @@ toggleBtn.addEventListener('click', () =>
 );
 
 // Close button
-closeBtn.addEventListener('click', () => {
-  document.getElementById('text-box').classList.remove('show');
-});
+closeBtn.addEventListener('click', () =>
+  document.getElementById('text-box').classList.remove('show')
+);
 
 // Change voice
 voicesSelect.addEventListener('change', setVoice);
@@ -136,6 +137,6 @@ voicesSelect.addEventListener('change', setVoice);
 readBtn.addEventListener('click', () => {
   setTextMessage(textarea.value);
   speakText();
-})
+});
 
 getVoices();
