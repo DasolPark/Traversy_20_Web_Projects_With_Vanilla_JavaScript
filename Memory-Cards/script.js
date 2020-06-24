@@ -49,18 +49,18 @@ function createCard(data, index) {
   }
 
   card.innerHTML = `
-    <div class="inner-card">
-      <div class="inner-card-front">
-        <p>
-          ${data.question}
-        </p>
-      </div>
-      <div class="inner-card-back">
-        <p>
-          ${data.answer}
-        </p>
-      </div>
-    </div>
+  <div class="inner-card">
+  <div class="inner-card-front">
+    <p>
+      ${data.question}
+    </p>
+  </div>
+  <div class="inner-card-back">
+    <p>
+      ${data.answer}
+    </p>
+  </div>
+</div>
   `;
 
   card.addEventListener('click', () => card.classList.toggle('show-answer'));
@@ -107,7 +107,7 @@ nextBtn.addEventListener('click', () => {
   cardsEl[currentActiveCard].className = 'card active';
 
   updateCurrentText();
-})
+});
 
 // Prev button
 prevBtn.addEventListener('click', () => {
@@ -122,11 +122,10 @@ prevBtn.addEventListener('click', () => {
   cardsEl[currentActiveCard].className = 'card active';
 
   updateCurrentText();
-})
+});
 
 // Show add container
 showBtn.addEventListener('click', () => addContainer.classList.add('show'));
-
 // Hide add container
 hideBtn.addEventListener('click', () => addContainer.classList.remove('show'));
 
@@ -155,4 +154,4 @@ clearBtn.addEventListener('click', () => {
   localStorage.clear();
   cardsContainer.innerHTML = '';
   window.location.reload();
-})
+});

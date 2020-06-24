@@ -15,7 +15,7 @@
 |  11   |     Infinite Scrolling     |  [x]  |
 |  12   |        Typing Game         |  [x]  |
 |  13   |     Speech Text Reader     |  [x]  |
-|  14   |        Memory Cards        |  [ ]  |
+|  14   |        Memory Cards        |  [x]  |
 |  15   |      LyricsSearch App      |  [ ]  |
 |  16   |        Relaxer App         |  [ ]  |
 |  17   |       Breakout Game        |  [ ]  |
