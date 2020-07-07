@@ -17,7 +17,7 @@
 |  13   |     Speech Text Reader     |  [x]  |
 |  14   |        Memory Cards        |  [x]  |
 |  15   |      LyricsSearch App      |  [x]  |
-|  16   |        Relaxer App         |  [ ]  |
+|  16   |        Relaxer App         |  [x]  |
 |  17   |       Breakout Game        |  [ ]  |
 |  18   |     New Year Countdown     |  [ ]  |
 |  19   |       Sortable List        |  [ ]  |
