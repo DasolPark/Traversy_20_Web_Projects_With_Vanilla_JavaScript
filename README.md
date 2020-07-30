@@ -18,7 +18,7 @@
 |  14   |        Memory Cards        |  [x]  |
 |  15   |      LyricsSearch App      |  [x]  |
 |  16   |        Relaxer App         |  [x]  |
-|  17   |       Breakout Game        |  [ ]  |
-|  18   |     New Year Countdown     |  [ ]  |
+|  17   |       Breakout Game        |  [x]  |
+|  18   |     New Year Countdown     |  [x]  |
 |  19   |       Sortable List        |  [ ]  |
 |  20   | Speak Number Guessing Game |  [ ]  |
