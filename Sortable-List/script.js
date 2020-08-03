@@ -12,7 +12,7 @@ const richestPeople = [
   'Mark Zuckerberg',
   'Michael Bloomberg',
   'Larry Page'
-]
+];
 
 // Store listitems
 const listItems = [];
@@ -45,7 +45,7 @@ function createList() {
       draggable_list.appendChild(listItem);
     });
 
-  addEventListener();
+  addEventListeners();
 }
 
 function dragStart() {
@@ -99,20 +99,20 @@ function checkOrder() {
   });
 }
 
-function addEventListener() {
+function addEventListeners() {
   const draggables = document.querySelectorAll('.draggable');
   const dragListItems = document.querySelectorAll('.draggable-list li');
 
   draggables.forEach(draggable => {
     draggable.addEventListener('dragstart', dragStart);
-  })
+  });
 
   dragListItems.forEach(item => {
     item.addEventListener('dragover', dragOver);
     item.addEventListener('drop', dragDrop);
     item.addEventListener('dragenter', dragEnter);
     item.addEventListener('dragleave', dragLeave);
-  })
+  });
 }
 
 check.addEventListener('click', checkOrder);
