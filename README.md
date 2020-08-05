@@ -20,5 +20,5 @@
 |  16   |        Relaxer App         |  [x]  |
 |  17   |       Breakout Game        |  [x]  |
 |  18   |     New Year Countdown     |  [x]  |
-|  19   |       Sortable List        |  [ ]  |
+|  19   |       Sortable List        |  [x]  |
 |  20   | Speak Number Guessing Game |  [ ]  |
