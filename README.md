@@ -21,4 +21,4 @@
 |  17   |       Breakout Game        |  [x]  |
 |  18   |     New Year Countdown     |  [x]  |
 |  19   |       Sortable List        |  [x]  |
-|  20   | Speak Number Guessing Game |  [ ]  |
+|  20   | Speak Number Guessing Game |  [x]  |

@@ -2,15 +2,15 @@ const msgEl = document.getElementById('msg');
 
 const randomNum = getRandomNumber();
 
-console.log('Number: ', randomNum);
+console.log('Number:', randomNum);
 
-window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+window.SpeechRecognition =
+  window.SpeechRecognition || window.webkitSpeechRecognition;
 
 let recognition = new window.SpeechRecognition();
 
 // Start recognition and game
 recognition.start();
-
 
 // Capture user speak
 function onSpeak(e) {
@@ -47,7 +47,8 @@ function checkNumber(msg) {
   // Check number
   if (num === randomNum) {
     document.body.innerHTML = `
-      <h2>Congrats! You have guessed the number! <br><br>It was ${num}</h2>
+      <h2>Congrats! You have guessed the number! <br><br>
+      It was ${num}</h2>
       <button class="play-again" id="play-again">Play Again</button>
     `;
   } else if (num > randomNum) {
@@ -68,8 +69,8 @@ recognition.addEventListener('result', onSpeak);
 // End SR service
 recognition.addEventListener('end', () => recognition.start());
 
-document.body.addEventListener('click', (e) => {
-  if (e.target.id === 'play-again') {
+document.body.addEventListener('click', e => {
+  if (e.target.id == 'play-again') {
     window.location.reload();
   }
 });
